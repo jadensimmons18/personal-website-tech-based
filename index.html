@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaden Simmons</title>
+<meta name="description" content="Jaden Simmons — computer science student at UCF building full-stack apps and heading toward robotics, AI and autonomous systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">jaden<span class="accent">@</span>ucf<span class="accent">:~$</span></a>
+    <nav aria-label="Main">
+      <a href="#about"><span class="accent">01.</span> about</a>
+      <a href="#projects"><span class="accent">02.</span> projects</a>
+      <a href="#connect"><span class="accent">03.</span> connect</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="top" class="hero">
+  <div class="floor" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="boot"><span class="pulse"></span>&gt; system.boot() — hello, world</div>
+      <h1 class="glitch" data-text="JADEN SIMMONS">JADEN SIMMONS</h1>
+      <div class="typed-line" aria-hidden="true">&gt; <span id="typed"></span><span class="cursor"></span></div>
+      <p class="lede">Computer science student at UCF building full-stack apps — and steering toward robotics, AI and autonomous systems.</p>
+      <div class="actions">
+        <a class="cta primary" href="#projects">./view_projects</a>
+        <a class="cta ghost" href="#connect">connect --now</a>
+      </div>
+    </div>
+
+    <div class="term" aria-label="Terminal summary">
+      <div class="term-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot on"></span>
+        <span class="term-title">~/jaden — zsh</span>
+      </div>
+      <div class="term-body">
+        <div class="tl" style="animation-delay: 0.3s"><span class="accent">$</span> whoami</div>
+        <div class="tl out" style="animation-delay: 0.7s">jaden simmons — cs student @ ucf</div>
+        <div class="tl" style="animation-delay: 1.2s"><span class="accent">$</span> cat focus.txt</div>
+        <div class="tl out" style="animation-delay: 1.6s">robotics · machine learning · autonomy</div>
+        <div class="tl" style="animation-delay: 2.1s"><span class="accent">$</span> ls ./stack</div>
+        <div class="tl" style="animation-delay: 2.5s; color: var(--cyan)">react  node  express  mongodb  socket.io</div>
+        <div class="tl" style="animation-delay: 3.0s"><span class="accent">$</span> status --career</div>
+        <div class="tl" style="animation-delay: 3.4s; color: var(--green)">● open to internships &amp; new-grad roles</div>
+        <div class="tl" style="animation-delay: 3.8s"><span class="accent">$</span> <span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scrollhint">SCROLL<span aria-hidden="true">↓</span></a>
+</section>
+
+<!-- BELOW HERO: rain field -->
+<div class="rain-wrap" id="rain-wrap">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="rain-fade" aria-hidden="true"></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <div class="section-head reveal">
+      <span class="num">01.</span>
+      <h2>about_me</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="row">
+      <div class="about-card reveal">
+        <p>I'm a computer science student at the <span class="hl">University of Central Florida</span>, graduating in August 2027. I like building things end to end — from the database schema to the last pixel of the interface.</p>
+        <p>I've shipped full-stack apps solo and on teams, most recently <span class="hl-cyan">Ember</span>, a real-time messenger I built and deployed on my own. A machine learning course pulled me toward <span class="hl">robotics, AI and autonomous systems</span>, and that's where I'm headed next.</p>
+        <p>Right now I'm looking for software engineering internships and new-grad roles.</p>
+        <div class="chips">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Socket.io</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+      <div class="sysinfo reveal">
+        <div class="label">// SYSTEM_INFO</div>
+        <dl>
+          <div><dt>LOCATION</dt><dd>Longwood, FL</dd></div>
+          <div><dt>EDUCATION</dt><dd>B.S. Computer Science, UCF</dd></div>
+          <div><dt>GRADUATION</dt><dd>Aug 2027</dd></div>
+          <div><dt>FOCUS</dt><dd>Robotics · AI · Autonomy</dd></div>
+          <div><dt>STATUS</dt><dd class="status"><span class="pulse"></span>Open to opportunities</dd></div>
+          <div><dt>LOCAL_TIME</dt><dd class="time"><span data-clock>--:--:--</span> ET</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <div class="section-head reveal">
+      <span class="num">02.</span>
+      <h2>personal_projects</h2>
+      <span class="rule"></span>
+    </div>
+
+    <div class="projects">
+      <article class="card featured reveal">
+        <div class="featured-copy">
+          <div class="featured-tags"><span class="accent">FEATURED / 01</span><span class="live">● LIVE</span></div>
+          <h3>Ember</h3>
+          <p>A real-time messaging app I designed, built and deployed solo. Messages are pushed instantly over WebSockets, with a React front end on Vercel and a Node/Express API on Render backed by MongoDB.</p>
+          <div class="stack"><span>React</span><span class="sl">/</span><span>Node.js</span><span class="sl">/</span><span>Express</span><span class="sl">/</span><span>MongoDB</span><span class="sl">/</span><span>Socket.io</span></div>
+          <div class="links">
+            <a class="link" href="https://[EMBER-LIVE-URL]">live demo <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="link" href="https://github.com/[YOUR-HANDLE]/[EMBER-REPO]">source <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="code" aria-hidden="true">
+          <div><span class="accent">socket</span>.on(<span class="s">'message'</span>, (msg) =&gt; {</div>
+          <div style="padding-left: 20px">io.to(msg.room)</div>
+          <div style="padding-left: 40px">.emit(<span class="s">'message'</span>, msg);</div>
+          <div>});</div>
+          <div class="ok">// delivered in real time ✓</div>
+        </div>
+      </article>
+
+      <article class="card small reveal">
+        <div class="card-meta"><span class="accent">02</span><span>TEAM · COP4331</span></div>
+        <h3>ContactVault</h3>
+        <p>A team-built contact manager. As the UI specialist I owned the front end — layout, interaction and making the app feel fast.</p>
+        <div class="tags">frontend · ui design · teamwork</div>
+        <a class="link" href="https://github.com/[YOUR-HANDLE]/[CONTACTVAULT-REPO]">view repo <span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="card small reveal">
+        <div class="card-meta"><span class="accent">03</span><span>FULL-STACK</span></div>
+        <h3>Finance Manager</h3>
+        <p>A personal finance app with a Node/Express and MongoDB back end, secured with email one-time-passcode sign-in.</p>
+        <div class="tags">node · express · mongodb · otp auth</div>
+        <a class="link" href="https://github.com/[YOUR-HANDLE]/[FINANCE-REPO]">view repo <span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect" class="section container">
+    <div class="section-head reveal">
+      <span class="num">03.</span>
+      <h2>connect</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="row">
+      <div class="connect-copy reveal">
+        <p class="big">Let's build something <span class="accent">together.</span></p>
+        <p class="sub">Hiring for an internship or new-grad role, working on robotics or AI, or just want to talk code? My inbox is open.</p>
+        <a class="cta primary" href="mailto:[YOUR-EMAIL]">send_message()</a>
+      </div>
+      <div class="term reveal">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot on"></span>
+          <span class="term-title">connect.sh</span>
+        </div>
+        <div class="cmds">
+          <a class="cmd" href="mailto:[YOUR-EMAIL]"><span><span class="accent">$</span> connect --email</span><span class="val">[YOUR-EMAIL]</span></a>
+          <a class="cmd" href="https://github.com/[YOUR-HANDLE]"><span><span class="accent">$</span> connect --github</span><span class="val">github.com/[YOUR-HANDLE]</span></a>
+          <a class="cmd" href="https://linkedin.com/in/[YOUR-HANDLE]"><span><span class="accent">$</span> connect --linkedin</span><span class="val">in/[YOUR-HANDLE]</span></a>
+          <a class="cmd" href="https://[RESUME-LINK]"><span><span class="accent">$</span> cat resume.pdf</span><span class="val">download ↓</span></a>
+          <div class="prompt"><span class="accent">$</span> <span class="cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Jaden Simmons</span>
+      <span>Orlando, FL · <span class="hl-cyan" data-clock>--:--:--</span> ET</span>
+      <a href="#top">back_to_top ↑</a>
+    </div>
+  </footer>
+</div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
